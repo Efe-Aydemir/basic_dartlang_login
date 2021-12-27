@@ -1,1 +1,1 @@
-# kullanılan kütüphane dart:io
+# Libraries used dart:io
