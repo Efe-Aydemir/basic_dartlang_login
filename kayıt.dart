@@ -1,30 +1,30 @@
 import 'dart:io';
 
 void main() {
-  print("Kayıt Ekranı");
+  print("Sign up");
   print("---------------");
-  stdout.write("Adınız: ");
-  var isim = stdin.readLineSync();
-  stdout.write("Şifreniz: ");
+  stdout.write("Name: ");
+  var name = stdin.readLineSync();
+  stdout.write("Password: ");
   var passw = stdin.readLineSync();
-  var toplam = {"isim": isim, "şifre": passw};
-  print("${toplam["isim"]} adlı kullanıcı başarı ile kayıt edildi");
+  var toplam = {"name": name, "şifre": passw};
+  print("${toplam["name"]} adlı kullanıcı başarı ile kayıt edildi");
   print("-" * 50);
 
-  var giris = false;
+  var log = false;
 
-  while (giris == false) {
-    print("Giriş Ekranı");
-    stdout.write("Adınız: ");
-    var gir_isim = stdin.readLineSync();
-    stdout.write("Şifreniz: ");
-    var gir_parola = stdin.readLineSync();
+  while (log == false) {
+    print("Login");
+    stdout.write("Name: ");
+    var in_name = stdin.readLineSync();
+    stdout.write("Password: ");
+    var in_passw = stdin.readLineSync();
 
-    if (isim == gir_isim && passw == gir_parola) {
-      print("Giriş Başarılı ${isim}");
-      var giris = true;
+    if (name == in_name && passw == in_passw) {
+      print("Login successful ${name}");
+      var log = true;
     } else {
-      print("Girdiğiniz Bilgiler uyuşmuyor");
+      print("The information you entered does not match");
       print("-" * 50);
     }
   }
