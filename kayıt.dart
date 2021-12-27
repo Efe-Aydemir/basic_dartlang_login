@@ -8,7 +8,7 @@ void main() {
   stdout.write("Password: ");
   var passw = stdin.readLineSync();
   var toplam = {"name": name, "pass": passw};
-  print("${toplam["name"]} adlı kullanıcı başarı ile kayıt edildi");
+  print("${toplam["name"]} User has been successfully registered");
   print("-" * 50);
 
   var log = false;
