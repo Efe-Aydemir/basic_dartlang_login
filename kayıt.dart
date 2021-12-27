@@ -7,7 +7,7 @@ void main() {
   var name = stdin.readLineSync();
   stdout.write("Password: ");
   var passw = stdin.readLineSync();
-  var toplam = {"name": name, "şifre": passw};
+  var toplam = {"name": name, "pass": passw};
   print("${toplam["name"]} adlı kullanıcı başarı ile kayıt edildi");
   print("-" * 50);
 
